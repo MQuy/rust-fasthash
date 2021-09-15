@@ -197,7 +197,6 @@ fn build_fasthash() {
         .cpp(true)
         .flag("-std=c++11")
         .include("src/highwayhash")
-        .flag("-Wno-unknown-attributes")
         .file("src/fasthash.cpp");
 
     if cfg!(feature = "city") {
